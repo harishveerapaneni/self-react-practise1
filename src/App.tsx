@@ -21,6 +21,7 @@ function App() {
     const origin = location.origin;
     const searchPharms = '?selectedCourseIdx=${idx}'
     const url = origin + searchPharms;
+    location.href = url;
   };
 
   const urlSearchParms = location.search 
