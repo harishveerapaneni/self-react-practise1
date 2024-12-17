@@ -17,8 +17,13 @@ function App() {
 
   const typeCourseClick = (idx) => {
     setselected(idx);
-    localStorage.setItem('selectedCourseIdx', idx);
+    /*localStorage.setItem('selectedCourseIdx', idx);*/
+    const origin = location.origin;
+    const searchPharms = '?selectedCourseIdx=${idx}'
+    const url = origin + searchPharms;
   };
+
+  const urlSearchParms = location.search 
 
   return (
     <>
