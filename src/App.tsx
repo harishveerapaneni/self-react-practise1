@@ -23,6 +23,7 @@ function App() {
     const searchPharms = '?selectedCourseIdx=${idx}'
     const url = origin + searchPharms;
     location.href = url;
+    history.pushState({path: url},'changed',url);
   };
 
   const urlSearchParms = location.search
