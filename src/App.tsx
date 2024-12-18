@@ -2,6 +2,7 @@ import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
+import { userParms, useLocation } from "react-router-dom";
 
 function App() {
   /*let selected = 1;*/
@@ -24,7 +25,7 @@ function App() {
     location.href = url;
   };
 
-  const urlSearchParms = location.search 
+  const urlSearchParms = location.search
 
   return (
     <>
